@@ -8,17 +8,28 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="155dp"
         android:background="@color/blackbut"
         android:orientation="vertical">
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Комнаты"
+        android:fontFamily="@font/bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="115dp"/>
     <TextView
         android:id="@+id/yourhome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Твой дом"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/bold"
         android:textSize="22sp"
         android:textColor="@color/white"
         android:layout_marginStart="15dp"
@@ -28,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="г. Омск, ул. Ленина, д. 24"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/bold"
         android:textSize="12sp"
         android:textColor="#94949B"
         android:layout_marginStart="15dp" />
@@ -40,5 +51,132 @@
         android:src="@drawable/btn_settings"
         android:layout_alignParentEnd="true"/>
 
+    <ImageView
+        android:layout_width="49dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/dobavlenie" />
+
+    <ImageView
+        android:layout_width="427dp"
+        android:layout_height="116dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginBottom="435dp"
+        android:src="@drawable/Rectangle_screen" />
+
+    <ImageView
+        android:layout_width="427dp"
+        android:layout_height="116dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginBottom="297dp"
+        android:src="@drawable/Rectangle_screen" />
+
+    <ImageView
+        android:layout_width="427dp"
+        android:layout_height="116dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginBottom="141dp"
+        android:src="@drawable/Rectangle_screen" />
+
+    <ImageView
+        android:layout_width="204dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="455dp"
+        android:src="@drawable/divan" />
+
+    <TextView
+        android:id="@+id/divan"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="481dp"
+        android:fontFamily="@font/bold"
+        android:text="Гостиная"
+        android:textColor="#0B50A0"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/bathrom"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="188dp"
+        android:fontFamily="@font/bold"
+        android:text="Ванная"
+        android:textColor="#0B50A0"
+        android:textSize="40px" />
+
+    <TextView
+        android:id="@+id/kitchen"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="189dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="340dp"
+        android:fontFamily="@font/bold"
+        android:text="Кухня"
+        android:textColor="#0B50A0"
+        android:textSize="40px" />
+
+
+
+    <ImageView
+        android:layout_width="204dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="310dp"
+        android:src="@drawable/kitchen" />
+
+    <ImageView
+        android:layout_width="204dp"
+        android:layout_height="78dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="158dp"
+        android:src="@drawable/bathroom" />
 
 </RelativeLayout>

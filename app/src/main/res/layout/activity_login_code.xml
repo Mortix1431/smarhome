@@ -27,7 +27,7 @@
             android:text="Умный дом"
             android:textColor="@color/white"
             android:gravity="center"
-            android:fontFamily="@font/montserrat_bold"
+            android:fontFamily="@font/bold"
             android:layout_gravity="center_horizontal"/>
         <LinearLayout
             android:id="@+id/dots"
@@ -74,7 +74,7 @@
                     android:layout_height="80dp"
                     android:text="1"
                     android:tag="1"
-                    android:fontFamily="@font/montserrat_light"
+                    android:fontFamily="@font/light"
                     android:textSize="48sp"
                     android:textColor="@color/black"
                     android:onClick="num_click"
@@ -83,7 +83,7 @@
                     android:id="@+id/pass_btn2"
                     android:text="2"
                     android:tag="2"
-                    android:fontFamily="@font/montserrat_light"
+                    android:fontFamily="@font/light"
                     android:textSize="48sp"
                     android:textColor="@color/black"
                     android:layout_width="100dp"
@@ -95,7 +95,7 @@
                     android:id="@+id/pass_btn3"
                     android:text="3"
                     android:tag="3"
-                    android:fontFamily="@font/montserrat_light"
+                    android:fontFamily="@font/light"
                     android:textSize="48sp"
                     android:textColor="@color/black"
                     android:layout_width="100dp"
@@ -109,7 +109,7 @@
                     android:id="@+id/pass_btn4"
                     android:text="4"
                     android:tag="4"
-                    android:fontFamily="@font/montserrat_light"
+                    android:fontFamily="@font/light"
                     android:textSize="48sp"
                     android:textColor="@color/black"
                     android:layout_width="100dp"
@@ -121,7 +121,7 @@
                     android:id="@+id/pass_btn5"
                     android:text="5"
                     android:tag="5"
-                    android:fontFamily="@font/montserrat_light"
+                    android:fontFamily="@font/light"
                     android:textSize="48sp"
                     android:textColor="@color/black"
                     android:layout_width="100dp"
@@ -134,7 +134,7 @@
                     android:id="@+id/pass_btn6"
                     android:text="6"
                     android:tag="6"
-                    android:fontFamily="@font/montserrat_light"
+                    android:fontFamily="@font/light"
                     android:textSize="48sp"
                     android:textColor="@color/black"
                     android:layout_width="100dp"
@@ -144,13 +144,16 @@
                     android:onClick="num_click"
                     android:background="@drawable/border_pin"/>
             </TableRow>
-            <TableRow android:orientation="vertical" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:layout_marginBottom="10dp">
+            <TableRow android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
                 <Button
 
                     android:id="@+id/pass_btn7"
                     android:text="7"
                     android:tag="7"
-                    android:fontFamily="@font/montserrat_light"
+                    android:fontFamily="@font/light"
                     android:textSize="48sp"
                     android:textColor="@color/black"
                     android:layout_width="100dp"
@@ -162,7 +165,7 @@
                     android:id="@+id/pass_btn8"
                     android:text="8"
                     android:tag="8"
-                    android:fontFamily="@font/montserrat_light"
+                    android:fontFamily="@font/light"
                     android:textSize="48sp"
                     android:textColor="@color/black"
                     android:layout_width="100dp"
@@ -175,7 +178,7 @@
                     android:id="@+id/pass_btn9"
                     android:text="9"
                     android:tag="9"
-                    android:fontFamily="@font/montserrat_light"
+                    android:fontFamily="@font/light"
                     android:textSize="48sp"
                     android:textColor="@color/black"
                     android:layout_width="100dp"
@@ -194,7 +197,7 @@
             android:layout_gravity="center_horizontal"
             app:cornerRadius="12dp"
             android:text="Выйти"
-            android:fontFamily="@font/montserrat_bold"
+            android:fontFamily="@font/bold"
             android:theme="@style/black_btn"
             android:layout_marginTop="50dp"/>
     </LinearLayout>

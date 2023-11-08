@@ -12,7 +12,7 @@
         android:background="@color/blackbut"
         android:text="Добавить адрес"
         android:textColor="@color/white"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/bold"
         android:textSize="20sp"
         android:gravity="center"/>
     <TextView
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="Добавьте адрес своего дома в формате\nг. Название города, ул. Название города, ул. Название улицы, д.\nНомер дома"
         android:gravity="center"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/bold"
         android:textColor="@color/black"/>
     <EditText
         android:layout_marginTop="30dp"
@@ -31,7 +31,7 @@
         android:layout_height="50dp"
         android:hint="Адрес"
         android:background="@drawable/border_edit"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/bold"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textHome"/>
     <Button

@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fon"
+    android:background="@drawable/streets"
     tools:context=".CreateCode">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#9930CCE1"
-        android:orientation="vertical"
-        android:weightSum="10">
-
-        <ImageView
-            android:layout_weight="2"
-            android:id="@+id/logo"
-            android:layout_width="89dp"
-            android:layout_height="0dp"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/logo" />
+        android:orientation="vertical">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal"/>
     <TextView
-        android:layout_weight="1"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:textSize="25sp"
         android:text="Создайте\nпин-код"
         android:textColor="@color/white"
@@ -33,10 +30,9 @@
         android:fontFamily="@font/bold"
         android:layout_gravity="center_horizontal"/>
     <LinearLayout
-        android:layout_weight="0"
         android:id="@+id/dots"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="15dp">
         <ImageView
@@ -66,21 +62,16 @@
 
 
     <TableLayout
-        android:layout_weight="5"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"
         android:background="#9C30CCE1">
-        <TableRow
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp">
+        <TableRow android:layout_marginTop="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
             <Button
-
                 android:id="@+id/pass_btn1"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 android:text="1"
                 android:tag="1"
                 android:fontFamily="@font/light"
@@ -96,7 +87,7 @@
                 android:textSize="48sp"
                 android:textColor="@color/black"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 android:layout_marginStart="24dp"
                 android:onClick="num_click"
                 android:background="@drawable/border_pin"/>
@@ -108,12 +99,14 @@
                 android:textSize="48sp"
                 android:textColor="@color/black"
                 android:layout_width="100dp"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 android:layout_marginLeft="24dp"
                 android:onClick="num_click"
                 android:background="@drawable/border_pin"/>
         </TableRow>
-        <TableRow android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+        <TableRow
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
             <Button
                 android:id="@+id/pass_btn4"
                 android:text="4"
@@ -153,9 +146,11 @@
                 android:onClick="num_click"
                 android:background="@drawable/border_pin"/>
         </TableRow>
-        <TableRow android:orientation="vertical" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_marginBottom="20dp">
+        <TableRow
+            android:orientation="vertical"
+            android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:layout_marginBottom="10dp">
             <Button
-
+                
                 android:id="@+id/pass_btn7"
                 android:text="7"
                 android:tag="7"
@@ -189,7 +184,7 @@
                 android:textColor="@color/black"
                 android:layout_width="100dp"
                 android:layout_height="80dp"
-                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
                 android:layout_marginTop="24dp"
                 android:onClick="num_click"
                 android:background="@drawable/border_pin"/>
@@ -197,4 +192,9 @@
 
     </TableLayout>
 </LinearLayout>
-</LinearLayout>
+
+
+
+
+
+</RelativeLayout>
