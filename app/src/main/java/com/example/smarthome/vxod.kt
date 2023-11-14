@@ -10,16 +10,14 @@ import androidx.lifecycle.lifecycleScope
 import io.github.jan.supabase.gotrue.gotrue
 import io.github.jan.supabase.gotrue.providers.builtin.Email
 import kotlinx.coroutines.launch
-
 @SuppressLint("CustomSplashScreen")
-class splashscreen : AppCompatActivity() {
+class vxod : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splashscreen)
+        setContentView(R.layout.activity_vxod)
         val sPref = getSharedPreferences("login", MODE_PRIVATE)
 
-        //sPref.edit().putString("email", "blabla").apply()
-        //sPref.edit().remove("email").apply()
+
         val test : String? = sPref.getString("email", "")
         if (test != "") {
             lifecycleScope.launch {

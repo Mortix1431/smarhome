@@ -6,24 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainScreen">
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="155dp"
+        android:layout_height="150dp"
         android:background="@color/blackbut"
         android:orientation="vertical">
 
+        <ImageView
+            android:layout_width="163dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="117dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="65dp"
+            android:src="@drawable/rectangle" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/room"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Комнаты"
-        android:fontFamily="@font/bold"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="115dp"/>
     <TextView
         android:id="@+id/yourhome"
         android:layout_width="wrap_content"
@@ -34,6 +33,16 @@
         android:textColor="@color/white"
         android:layout_marginStart="15dp"
         android:layout_marginTop="55dp"/>
+    <TextView
+        android:id="@+id/yourroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Комнаты"
+        android:fontFamily="@font/bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="110dp"/>
     <TextView
         android:layout_below="@+id/yourhome"
         android:layout_width="wrap_content"
@@ -51,132 +60,93 @@
         android:src="@drawable/btn_settings"
         android:layout_alignParentEnd="true"/>
 
-    <ImageView
-        android:layout_width="49dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="328dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="25dp"
-        android:src="@drawable/dobavlenie" />
 
     <ImageView
-        android:layout_width="427dp"
-        android:layout_height="116dp"
+        android:id="@+id/living_room"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="-6dp"
-        android:layout_marginBottom="435dp"
-        android:src="@drawable/Rectangle_screen" />
-
-    <ImageView
-        android:layout_width="427dp"
-        android:layout_height="116dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="-6dp"
-        android:layout_marginBottom="297dp"
-        android:src="@drawable/Rectangle_screen" />
-
-    <ImageView
-        android:layout_width="427dp"
-        android:layout_height="116dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="-10dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="-6dp"
-        android:layout_marginBottom="141dp"
-        android:src="@drawable/Rectangle_screen" />
-
-    <ImageView
-        android:layout_width="204dp"
-        android:layout_height="78dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="189dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="0dp"
         android:layout_marginBottom="455dp"
-        android:src="@drawable/divan" />
+        android:background="@drawable/border_edit"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="num_click"
+        android:padding="10dp"
 
-    <TextView
-        android:id="@+id/divan"
-        android:layout_width="89dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="189dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="481dp"
-        android:fontFamily="@font/bold"
-        android:text="Гостиная"
-        android:textColor="#0B50A0"
-        android:textSize="40px" />
-
-    <TextView
-        android:id="@+id/bathrom"
-        android:layout_width="89dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="192dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="188dp"
-        android:fontFamily="@font/bold"
-        android:text="Ванная"
-        android:textColor="#0B50A0"
-        android:textSize="40px" />
-
-    <TextView
-        android:id="@+id/kitchen"
-        android:layout_width="89dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="189dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="340dp"
-        android:fontFamily="@font/bold"
-        android:text="Кухня"
-        android:textColor="#0B50A0"
-        android:textSize="40px" />
-
-
+        android:src="@drawable/living_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="204dp"
-        android:layout_height="78dp"
+        android:id="@+id/kitchen_room"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="189dp"
-        android:layout_marginBottom="310dp"
-        android:src="@drawable/kitchen" />
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="318dp"
+        android:background="@drawable/border_edit"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="click_room"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/kitchen_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="204dp"
-        android:layout_height="78dp"
+        android:id="@+id/bath_room"
+        android:layout_width="403dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="188dp"
-        android:layout_marginBottom="158dp"
-        android:src="@drawable/bathroom" />
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="429dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="184dp"
+        android:background="@drawable/border_edit"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="click_room"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bathroom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ofice_room"
+        android:layout_width="206px"
+        android:layout_height="199px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="629dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/room_change_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="click_room"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/pluse"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </RelativeLayout>

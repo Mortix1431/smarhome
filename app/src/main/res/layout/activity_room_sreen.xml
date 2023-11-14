@@ -18,6 +18,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:clickable="true"
+            android:onClick="num_click"
             android:focusable="true"
             android:src="@drawable/btn_back"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -36,8 +37,8 @@
             android:textSize="20dp" />
     </LinearLayout>
     <Button
-        android:layout_width="160dp"
-        android:layout_height="60dp"
+        android:layout_width="418px"
+        android:layout_height="119px"
         android:text="Сохранить"
         android:theme="@style/blue_btn"
         app:cornerRadius="12dp"
@@ -72,6 +73,217 @@
         android:text="Выбрать комнату"
         android:textColor="#94949B"
         android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="396dp"
+        android:fontFamily="@font/bold"
+        android:text="Кухня"
+        android:textColor="#94949B"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="396dp"
+        android:fontFamily="@font/bold"
+        android:text="Гостиная"
+        android:textColor="#94949B"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="313dp"
+        android:layout_marginBottom="229dp"
+        android:fontFamily="@font/bold"
+        android:text="Кабинет"
+        android:textColor="#94949B"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="197dp"
+        android:layout_marginBottom="230dp"
+        android:fontFamily="@font/bold"
+        android:text="Спальня"
+        android:textColor="#94949B"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="230dp"
+        android:fontFamily="@font/bold"
+        android:text="Зал"
+        android:textColor="#94949B"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="396dp"
+        android:fontFamily="@font/bold"
+        android:text="Ванная"
+        android:textColor="#94949B"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:id="@+id/kitchen_room"
+        android:layout_width="206px"
+        android:layout_height="199px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="413dp"
+        android:background="@drawable/room_change_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="num_click"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/kitchen_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bed_room"
+        android:layout_width="206px"
+        android:layout_height="199px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="265dp"
+        android:background="@drawable/room_change_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bed_white"
+        android:onClick="num_click"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/ofice_room"
+        android:layout_width="206px"
+        android:layout_height="199px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="265dp"
+        android:background="@drawable/room_change_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="num_click"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/office_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gostinaya_room"
+        android:layout_width="206px"
+        android:layout_height="199px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="236dp"
+        android:layout_marginEnd="304dp"
+        android:layout_marginBottom="413dp"
+        android:background="@drawable/room_change_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="num_click"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/living_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bath_room"
+        android:layout_width="206px"
+        android:layout_height="199px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="276dp"
+        android:layout_marginLeft="507px"
+        android:layout_marginTop="239dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="415dp"
+        android:background="@drawable/room_change_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="num_click"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bathroom_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tv_room"
+        android:layout_width="206px"
+        android:layout_height="199px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="263dp"
+        android:onClick="num_click"
+        android:background="@drawable/room_change_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/tv_white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </RelativeLayout>

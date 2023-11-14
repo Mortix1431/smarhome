@@ -22,8 +22,6 @@ object SBobj {
 
     fun getClient() : SupabaseClient {
         return this.client
-
-
     }
 
 }
