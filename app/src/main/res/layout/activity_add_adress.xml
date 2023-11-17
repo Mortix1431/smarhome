@@ -12,19 +12,18 @@
         android:background="@color/blackbut"
         android:text="Добавить адрес"
         android:textColor="@color/white"
-        android:fontFamily="@font/bold"
+        android:fontFamily="@font/montserrat_bold"
         android:textSize="20sp"
         android:gravity="center"/>
-
     <TextView
+        android:layout_centerInParent="true"
         android:id="@+id/textHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:fontFamily="@font/bold"
-        android:gravity="center"
         android:text="Добавьте адрес своего дома в формате\nг. Название города, ул. Название города, ул. Название улицы, д.\nНомер дома"
-        android:textColor="@color/black" />
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"/>
     <EditText
         android:layout_marginTop="30dp"
         android:id="@+id/edit_adress"
@@ -32,7 +31,7 @@
         android:layout_height="50dp"
         android:hint="Адрес"
         android:background="@drawable/border_edit"
-        android:fontFamily="@font/bold"
+        android:fontFamily="@font/montserrat_bold"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textHome"/>
     <Button
@@ -42,11 +41,10 @@
         android:theme="@style/blue_btn"
         app:cornerRadius="12dp"
         android:textSize="17sp"
-        android:onClick="save"
+        android:onClick="addHome1"
         android:layout_marginBottom="80dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true" />
-
 
 
 </RelativeLayout>

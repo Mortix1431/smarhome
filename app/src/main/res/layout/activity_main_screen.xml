@@ -1,153 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainScreen">
 
-
     <LinearLayout
+        android:id="@+id/kostyl"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:background="@color/blackbut"
-        android:orientation="horizontal">
-
-        <LinearLayout
-            android:weightSum="3"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <LinearLayout
-                android:layout_gravity="center_vertical"
-                android:layout_weight="2"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="35dp"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_gravity="center_vertical"
-                    android:id="@+id/yourhome"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Твой дом"
-                    android:fontFamily="@font/bold"
-                    android:textSize="22sp"
-                    android:textColor="@color/white" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <TextView
-                        android:layout_below="@+id/yourhome"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="г. Омск, ул. Ленина, д. 24"
-                        android:fontFamily="@font/bold"
-                        android:textSize="12sp"
-                        android:textColor="#94949B" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_gravity="bottom"
-                android:orientation="vertical"
-                android:layout_height="0dp"
-                android:weightSum="5"
-                >
-                <TextView
-
-                    android:gravity="center"
-                    android:layout_weight="3.6"
-                    android:id="@+id/yourroom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:text="Комнаты"
-                    android:fontFamily="@font/bold"
-                    android:textSize="22sp"
-                    android:textColor="@color/white"
-                    android:layout_marginStart="15dp" />
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"/>
-
-                <View
-
-                    android:layout_weight="1"
-                    android:layout_width="160dp"
-                    android:layout_height="0dp"
-                    android:background="@color/bluebut"/>
-
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_marginRight="20dp"
-                android:layout_gravity="end"
-                android:layout_width="54dp"
-                android:layout_height="60dp"
-
-                android:layout_marginTop="20dp"
-                android:src="@drawable/btn_settings" />
-        </LinearLayout>
-
-
+        android:orientation="vertical">
     </LinearLayout>
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <TextView
+        android:id="@+id/yourhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Твой дом"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="55dp"/>
+    <TextView
+        android:id="@+id/main_adress"
+        android:layout_below="@+id/yourhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Загрузка данных...."
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="12sp"
+        android:textColor="#94949B"
+        android:layout_marginStart="15dp" />
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/btn_settings"
+        android:onClick="setting"
+        android:layout_alignParentEnd="true"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/kostyl"
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".MainActivity">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:listitem="@layout/rooms_item" />
-
-    </LinearLayout>
-
-
-
-
-
-
-
-
-
+        />
     <ImageView
-        android:id="@+id/ofice_room"
-        android:layout_width="206px"
-        android:layout_height="199px"
-        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/btn_plus"
+        android:onClick="addR"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="296dp"
-        android:layout_marginTop="629dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/room_change_button"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="click_room"
-        android:padding="20dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/pluse"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentEnd="true"/>
 
-</LinearLayout>
+</RelativeLayout>

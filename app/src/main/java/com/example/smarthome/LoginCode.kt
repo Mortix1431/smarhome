@@ -3,24 +3,24 @@ package com.example.smarthome
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
-import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
-import io.github.jan.supabase.gotrue.gotrue
-import io.github.jan.supabase.gotrue.providers.builtin.Email
-import io.github.jan.supabase.postgrest.postgrest
+import com.example.smarthome.utils.UserMethods
 import kotlinx.coroutines.launch
 
 class LoginCode : AppCompatActivity() {
+
     var password = ""
-    var a = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_create_code)
+        setContentView(R.layout.activity_login_code)
     }
+
+
 
     fun num_click(view: View) {
         if(view.getTag().toString() != "dlt")
@@ -44,17 +44,30 @@ class LoginCode : AppCompatActivity() {
 
     fun setPassword(num : Int){
         password += num
-        Toast.makeText(this, password, Toast.LENGTH_SHORT).show()
-        if(password.length == 4){
-            val add = Intent(this, AddAdress::class.java)
-            startActivity(add)
-            finish()
-        }
+        //Toast.makeText(this, password, Toast.LENGTH_SHORT).show()
         when(password.length){
             1 -> findViewById<ImageView>(R.id.dot_0).setImageResource(R.drawable.dot_1)
             2 -> findViewById<ImageView>(R.id.dot_1).setImageResource(R.drawable.dot_1)
             3 -> findViewById<ImageView>(R.id.dot_2).setImageResource(R.drawable.dot_1)
             4 -> findViewById<ImageView>(R.id.dot_3).setImageResource(R.drawable.dot_1)
+        }
+        if(password.length == 4){
+            val sPref = getSharedPreferences("login", MODE_PRIVATE)
+            val add = Intent(this, AddAdress::class.java)
+            val main = Intent(this, MainScreen::class.java)
+            if(sPref.getString("code", "") == password) {
+                lifecycleScope.launch {
+
+
+                }
+            }else{
+                Toast.makeText(this, "Неправильный код", Toast.LENGTH_SHORT).show()
+                password = ""
+                findViewById<ImageView>(R.id.dot_0).setImageResource(R.drawable.dot_0)
+                findViewById<ImageView>(R.id.dot_1).setImageResource(R.drawable.dot_0)
+                findViewById<ImageView>(R.id.dot_2).setImageResource(R.drawable.dot_0)
+                findViewById<ImageView>(R.id.dot_3).setImageResource(R.drawable.dot_0)
+            }
         }
     }
 }
