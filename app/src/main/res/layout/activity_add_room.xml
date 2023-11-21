@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddRoom">
+    tools:context=".other.AddRoom">
 
     <TextView
         android:id="@+id/header"
@@ -69,7 +69,7 @@
                     android:layout_height="100dp"
                     android:padding="10dp"
                     android:scaleType="centerCrop"
-                    android:background="@drawable/room_change_button"
+                    android:background="@drawable/active_btn"
                     android:src="@drawable/living"
                     android:onClick="type"
                     android:tag="living"/>
@@ -95,7 +95,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:background="@drawable/room_change_button"
-                    android:src="@drawable/kitchen"
+                    android:src="@drawable/kitchen_white"
                     android:onClick="type"
                     android:tag="kitchen"/>
                 <TextView
@@ -118,7 +118,7 @@
                     android:layout_height="100dp"
                     android:background="@drawable/room_change_button"
                     android:padding="10dp"
-                    android:src="@drawable/bathroom"
+                    android:src="@drawable/bathroom_white"
                     android:scaleType="centerInside"
                     android:onClick="type"
                     android:tag="bathroom"/>

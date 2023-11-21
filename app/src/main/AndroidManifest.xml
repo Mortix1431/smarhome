@@ -16,37 +16,49 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".DeviceSettings"
+            android:name=".devices.Hood"
             android:exported="false" />
         <activity
-            android:name=".AddDevice"
+            android:name=".devices.Fan"
             android:exported="false" />
         <activity
-            android:name=".DevicesList"
+            android:name=".devices.Tempo"
             android:exported="false" />
         <activity
-            android:name=".AddRoom"
+            android:name=".devices.Conder"
             android:exported="false" />
         <activity
-            android:name=".Profile"
+            android:name=".devices.Light"
             android:exported="false" />
         <activity
-            android:name=".MainScreen"
+            android:name=".device_control.AddDevice"
             android:exported="false" />
         <activity
-            android:name=".AddAdress"
+            android:name=".device_control.DevicesList"
             android:exported="false" />
         <activity
-            android:name=".LoginCode"
+            android:name=".other.AddRoom"
             android:exported="false" />
         <activity
-            android:name=".CreateCode"
+            android:name=".main_activities.Profile"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".main_activities.MainScreen"
             android:exported="false" />
         <activity
-            android:name=".splashscreen"
+            android:name=".other.AddAdress"
+            android:exported="false" />
+        <activity
+            android:name=".code.LoginCode"
+            android:exported="false" />
+        <activity
+            android:name=".code.CreateCode"
+            android:exported="false" />
+        <activity
+            android:name=".authorization.Register"
+            android:exported="false" />
+        <activity
+            android:name=".other.splashscreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,13 +67,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Auth"
+            android:name=".authorization.Auth"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

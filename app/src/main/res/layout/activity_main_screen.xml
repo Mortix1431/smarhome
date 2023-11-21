@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainScreen">
+    tools:context=".main_activities.MainScreen">
 
     <LinearLayout
         android:id="@+id/kostyl"
@@ -29,7 +29,7 @@
         android:layout_below="@+id/yourhome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Загрузка данных...."
+        android:text="г. Омск, ул. Ленина, д. 24"
         android:fontFamily="@font/montserrat_bold"
         android:textSize="12sp"
         android:textColor="#94949B"
@@ -43,14 +43,44 @@
         android:onClick="setting"
         android:layout_alignParentEnd="true"/>
 
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@+id/kostyl"
-        android:id="@+id/list"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        />
+        android:layout_height="130dp"
+        android:background="@drawable/border_edit"
+        android:layout_below="@id/kostyl"
+        android:onClick="gostin">
+        <ImageView
+            android:id="@+id/room_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/living"
+            android:background="@drawable/active_btn"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:id="@+id/room_name"
+            app:layout_constraintLeft_toRightOf="@+id/room_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Гостиная"
+            android:layout_marginStart="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/bluebut"
+            android:textSize="20sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ImageView
         android:layout_marginBottom="40dp"
         android:layout_marginEnd="20dp"

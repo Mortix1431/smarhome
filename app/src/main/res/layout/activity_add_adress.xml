@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddAdress">
+    tools:context=".other.AddAdress">
 
     <TextView
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
         android:id="@+id/textHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Добавьте адрес своего дома в формате\nг. Название города, ул. Название города, ул. Название улицы, д.\nНомер дома"
+        android:text="Добавьте адрес своего дома в формате\nг. Название города, ул. Название улицы, д.\nНомер дома"
         android:gravity="center"
         android:fontFamily="@font/montserrat_bold"
         android:textColor="@color/black"/>
@@ -35,13 +35,14 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/textHome"/>
     <Button
+        android:id="@+id/save_btn"
         android:layout_width="160dp"
         android:layout_height="60dp"
         android:text="Сохранить"
         android:theme="@style/blue_btn"
         app:cornerRadius="12dp"
         android:textSize="17sp"
-        android:onClick="addHome1"
+        android:onClick="save"
         android:layout_marginBottom="80dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true" />

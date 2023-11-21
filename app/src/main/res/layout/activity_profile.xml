@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile">
+    tools:context=".main_activities.Profile">
 
     <LinearLayout
         android:id="@+id/back_black"
@@ -123,8 +123,7 @@
             android:text="Сохранить"
             android:theme="@style/blue_btn"
             app:cornerRadius="12dp"
-            android:textSize="17sp"
-            android:onClick="sohran"/>
+            android:textSize="17sp" />
         <Button
             android:layout_below="@id/profile_save"
             android:id="@+id/profile_exit"

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AddDevice">
+    tools:context=".device_control.AddDevice">
 
     <TextView
         android:id="@+id/header"
@@ -79,7 +79,7 @@
                     android:layout_height="100dp"
                     android:padding="10dp"
                     android:scaleType="centerCrop"
-                    android:background="@drawable/room_change_button"
+                    android:background="@drawable/active_btn"
                     android:src="@drawable/light"
                     android:onClick="type"
                     android:tag="light"/>
